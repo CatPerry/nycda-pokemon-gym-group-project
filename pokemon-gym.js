@@ -1,10 +1,10 @@
 // get elements from the DOM
-// let p = document.getElementsByClassName("all-pokemon")
-// let ul = document.createElement("ul")
-// let li = document.createElement("li")
-// ul.appendChild(li)
-// p.appendChild(ul)
-// document.body.appendChild(p)
+let p = document.getElementsByClassName("all-pokemon")
+let ul = document.createElement("ul")
+let li = document.createElement("li")
+ul.appendChild(li)
+p.appendChild(ul)
+document.body.appendChild(p)
 
 
 
@@ -13,6 +13,7 @@
 // axios.all([
 //     axios.get()
 // ])
+
 
 
 //IN-CLASS EXAMPLES
