@@ -2,14 +2,18 @@
 let p = document.getElementsByClassName("all-pokemon")
 let ul = document.createElement("ul")
 let li = document.createElement("li")
+
+li.innerHTML = multiplepokemon.all + '<br>'
+    + cataclysm.all + '<br>'
+
 ul.appendChild(li)
 p.appendChild(ul)
 document.body.appendChild(p)
 
+console.log(multiplepokemon.all)
+console.log(cataclysm.all)
 
-
-
-//WE'L USE THE AXIOS.all method rather than just the GET method, per Orlando's in-class hints
+// WE'L USE THE AXIOS.all method rather than just the GET method, per Orlando's in-class hints
 // axios.all([
 //     axios.get()
 // ])
