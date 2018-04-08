@@ -1,17 +1,28 @@
 // get elements from the DOM
-let p = document.getElementsByClassName("all-pokemon")
-let ul = document.createElement("ul")
-let li = document.createElement("li")
+let pokeAll = []
+pokeAll.push(catPokeArr)
 
-li.innerHTML = multiplepokemon.all + '<br>'
-    + cataclysm.all + '<br>'
+console.log(pokeAll)
+
+function printPokes(pokeAll) {
+    for (i = 0; i < pokeAll.length; i++) {
+        console.log(pokeAll[i])
+    }
+}
+printPokes()
+
+let li = document.createElement("li")
+let ul = document.createElement("ul")
+
+li.innerHTML = pokeAll
+    // + multiplepokemon.all + '<br>'
 
 ul.appendChild(li)
-p.appendChild(ul)
-document.body.appendChild(p)
+document.body.appendChild(ul)
 
-console.log(multiplepokemon.all)
-console.log(cataclysm.all)
+
+// console.log(multiplepokemon.all)
+// console.log(cataclysm.all)
 
 // WE'L USE THE AXIOS.all method rather than just the GET method, per Orlando's in-class hints
 // axios.all([
