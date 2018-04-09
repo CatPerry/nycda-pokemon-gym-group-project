@@ -1,6 +1,7 @@
 // get elements from the DOM
 let pokeAll = []
 pokeAll.push(catPokeArr)
+pokeAll.push(chrisPokeArr)
 
 console.log(pokeAll)
 
@@ -58,4 +59,3 @@ document.body.appendChild(ul)
 // callAxios(function (people) {
 //     console.log(people)
 // })
-
