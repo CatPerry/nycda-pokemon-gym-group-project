@@ -21,6 +21,8 @@ li.innerHTML = pokeAll
 ul.appendChild(li)
 document.body.appendChild(ul)
 
+var elem = document.querySelector('.carousel');
+var instance = M.Carousel.init(elem, options);
 
 // console.log(multiplepokemon.all)
 // console.log(cataclysm.all)
