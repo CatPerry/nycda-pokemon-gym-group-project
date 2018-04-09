@@ -1,61 +1,34 @@
 // get elements from the DOM
-let pokeAll = []
-pokeAll.push(catPokeArr)
+// let pokeAll = []
+// pokeAll.push(catPokeArr)
+// console.log(pokeAll[0])
 
-console.log(pokeAll)
-
-function printPokes(pokeAll) {
-    for (i = 0; i < pokeAll.length; i++) {
-        console.log(pokeAll[i])
-    }
-}
-printPokes()
-
-let li = document.createElement("li")
-let ul = document.createElement("ul")
-
-li.innerHTML = pokeAll
-    // + multiplepokemon.all + '<br>'
-
-ul.appendChild(li)
-document.body.appendChild(ul)
-
-
-// console.log(multiplepokemon.all)
-// console.log(cataclysm.all)
-
-// WE'L USE THE AXIOS.all method rather than just the GET method, per Orlando's in-class hints
-// axios.all([
-//     axios.get()
-// ])
-
-
-
-//IN-CLASS EXAMPLES
-// axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-1.json")
-//     .then(response => {
-//         // console.log(responses)
-//         let data = response.data
-
-//         // console.log(data)
-
-//         let person = new Person(
-//             data["first-name"],
-//             data["last-name"],
-//             data["age"],
-//             data["gender"]
-//         )
-
-//         people.add(person)
-
-//         callback(people)
-
-//         // console.log(people.get("orlando"))
-//     })
+// let pokePara = document.getElementsByClassName("all-pokemon")
+// let li = document.createElement("li")
+catPoke(function(cataclysm) {
+    console.log(cataclysm)
+})
+console.log(cataclysm)
+// function printPokes(cataclysm) {
+//     let listHTML = '<ol>'
+//     for (i = 0; i < cataclysm.length; i++) {
+//         //name
+//         listHTML += '<li>' + cataclysm[0].name + '</li>';
+//         //hp name and hpstat
+//         listHTML += '<li>' + pokeAll[0] + '</li>';
+//         //defense name and defense stat
+//         listHTML += '<li>' + pokeAll[0] + '</li>';
+//         //attack name and attack stat
+//         listHTML += '<li>' + pokeAll[0] + '</li>';
+//         //abilities name as a string
+//         listHTML += '<li>' + pokeAll[0] + '</li>';
+//     }
+//     listHTML += '</ol>';
+//     return (listHTML);
 // }
 
-
-// callAxios(function (people) {
-//     console.log(people)
-// })
-
+// document.getElementsByClassName("all-pokemon").innerHTML = printPokes(pokeAll[0])
+// li.innerHTML = printPokes(pokeAll)
+// li.innerHTML = printPokes(pokeAll[0])
+// ul.appendChild(li)
+// document.body.appendChild(ul)
