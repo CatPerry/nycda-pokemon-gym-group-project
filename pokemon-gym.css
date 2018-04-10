@@ -1,1 +1,28 @@
 /* hex #0116DB */
+
+/* Utilized code from stackoverflow to get the carousel
+and carousel items to a manageable height and width.
+https://stackoverflow.com/questions/37762139/how-to-increase-the-size-of-carousel-in-materialize-css */
+
+
+body {
+  background-color: blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.PokeTitle {
+  text-align: center;
+}
+
+.carousel .carousel-item {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+img {
+  width: 300px !important;
+  height: 300px !important;
+}
