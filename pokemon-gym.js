@@ -2,7 +2,7 @@
 let pokeOneInfo = document.getElementById("")
 let listHTML;
 
-<<<<<<< HEAD
+
 
 
     for (i = 0; i < cataclysm.all.length; i++) {
@@ -35,6 +35,3 @@ console.log(elem)
 var instance = M.Carousel.init(elem);
 
   var instance = M.FloatingActionButton.getInstance(elem);
-
-
->>>>>>> e79574b5a9ea2dcd4367ae34a3416fc427e55b43
