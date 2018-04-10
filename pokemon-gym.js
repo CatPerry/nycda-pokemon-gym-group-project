@@ -1,4 +1,4 @@
-// 
+//
 // let listHTML;
 // let guzzlord = document.getElementById("guzzlord")
 // let blaziken = document.getElementById("blaziken")
@@ -36,5 +36,3 @@
 var elem = document.querySelectorAll('.carousel');
 console.log(elem)
 var instance = M.Carousel.init(elem);
-
-  var instance = M.FloatingActionButton.getInstance(elem);
