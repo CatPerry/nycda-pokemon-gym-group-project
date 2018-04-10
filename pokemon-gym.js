@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 let pokeOneInfo = document.getElementById("")
 let listHTML;
 
-catPoke(function(cataclysm) {
-    console.log(cataclysm.all)
+
+
 
     for (i = 0; i < cataclysm.all.length; i++) {
         let div = document.createElement("div")
@@ -27,15 +25,6 @@ catPoke(function(cataclysm) {
 
 })
 
-=======
-let pokeAll = []
-pokeAll.push(catPokeArr)
-pokeAll.push(chrisPokeArr)
-
-console.log(pokeAll)
-=======
-
->>>>>>> 21b6aff14f16faf100e4ed2cb0fdd9b39da486c8
 
 // Code below utilized from materialize for both the carousel and the the Floating
 // Action Button.
@@ -46,6 +35,3 @@ console.log(elem)
 var instance = M.Carousel.init(elem);
 
   var instance = M.FloatingActionButton.getInstance(elem);
-
-
->>>>>>> e79574b5a9ea2dcd4367ae34a3416fc427e55b43
