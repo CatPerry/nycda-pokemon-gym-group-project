@@ -1,8 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 
-let pokeOneInfo = document.getElementById("")
 let listHTML;
+let guzzlord = document.getElementById("guzzlord")
+let blaziken = document.getElementById("blaziken")
+let talonflame = document.getElementById("talonflame")
 
 catPoke(function(cataclysm) {
     console.log(cataclysm.all)
@@ -13,17 +15,18 @@ catPoke(function(cataclysm) {
         let listHTML = document.createElement("ul")
         listHTML.innerHTML =` <li> ${cataclysm.all[i].name} </li>`;
         console.log(cataclysm.all[i].name)
-        // hp name and hpstat
-            ` <li> ${cataclysm.all[i].hp} </li>`;
-        // //defense name and defense stat
-        // //attack name and attack stat
-        // //abilities name as a string
+            + ` <li>${cataclysm.all[i].hp}: ${cataclysm.all[i].hpstat} </li>`;
+            + ` <li>${cataclysm.all[i].attack}: ${cataclysm.all[i].attackstat} </li>`;
+            + ` <li>Abilities: ${cataclysm.all[i].abilitiesname} </li>`;
+            + ` <li>${cataclysm.all[i].defensestat}: ${cataclysm.all[i].defense} </li>`;
         console.log(listHTML)
 
         div.appendChild(listHTML)
         section.appendChild(div)
         document.body.appendChild(section)
     }
+
+    
 
 })
 
