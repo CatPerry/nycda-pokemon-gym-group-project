@@ -32,8 +32,8 @@ class KrisCeddell {
   }
 }
 
-class Pokemon {
-  constructor(name, hp, hpstat, attack, attackstat, abilitiesname, defense) {
+class PokemonChris {
+  constructor(name, hp, hpstat, attack, attackstat, abilitiesname, defense, defensestat) {
     this.name = name
     this.hp = hp
     this.hpstat = hpstat
@@ -61,18 +61,17 @@ function chrisPoke(callback) {
 let poke4 = "https://pokeapi.co/api/v2/pokemon/142/"
 let poke5 = "https://pokeapi.co/api/v2/pokemon/130/"
 let poke6 = "https://pokeapi.co/api/v2/pokemon/248/"
-}
 
 axios.all([
   axios.get(poke4),
   axios.get(poke5),
-  axios.get(poke6)
+  axios.get(poke6),
 ]).then((response) => {
   response.forEach(response => {
     let data = response.data
     let abilitiesData = response.data.abilities
 
-    let pokemoninfo = new Pokemoninfo (
+    let pokemonchris = new PokemonChris (
       data.name,
       data.stats[5].stat.name,
       data.stats[5].base_stat,
@@ -90,10 +89,11 @@ axios.all([
       abilitiesList.toString()
       return abilitiesList
     }
-    krisceddell.add(pokemon)
+    krisceddell.add(pokemonchris)
   })
   callback(krisceddell)
 })
+}
 // let ul = document.querySelector("p")
 // let multiplepokemon = new KrisCeddell()
 //
