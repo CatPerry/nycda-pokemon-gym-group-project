@@ -1,4 +1,5 @@
 
+
 console.log(cataclysm.all)
 
 catPoke(function (cataclysm) {
@@ -40,12 +41,6 @@ function createCard(whereToAppend, pokemon) {
     }
 
 
-
-chrisPoke(function (krisceddell) {
-    console.log(krisceddell.all)
-})
-
-console.log(krisceddell.all)
 
 chrisPoke(function (krisceddell) {
     console.log(krisceddell)
@@ -96,4 +91,3 @@ var elem = document.querySelectorAll('.carousel');
 console.log(elem)
 var instance = M.Carousel.init(elem);
 
-var instance = M.FloatingActionButton.getInstance(elem);
