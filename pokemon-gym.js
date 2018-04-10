@@ -1,28 +1,36 @@
-// get elements from the DOM
-let pokeAll = []
-pokeAll.push(catPokeArr)
-pokeAll.push(chrisPokeArr)
+// // get elements from the DOM
+// let pokeAll = []
+// pokeAll.push(catPokeArr)
+// pokeAll.push(chrisPokeArr)
+//
+// console.log(pokeAll)
+//
+// function printPokes(pokeAll) {
+//     for (i = 0; i < pokeAll.length; i++) {
+//         console.log(pokeAll[i])
+//     }
+// }
+// printPokes()
+//
+// let li = document.createElement("li")
+// let ul = document.createElement("ul")
+//
+// li.innerHTML = pokeAll
+//     // + multiplepokemon.all + '<br>'
+//
+// ul.appendChild(li)
+// document.body.appendChild(ul)
 
-console.log(pokeAll)
+// Code below utilized from materialize for both the carousel and the the Floating
+// Action Button.
 
-function printPokes(pokeAll) {
-    for (i = 0; i < pokeAll.length; i++) {
-        console.log(pokeAll[i])
-    }
-}
-printPokes()
 
-let li = document.createElement("li")
-let ul = document.createElement("ul")
+var elem = document.querySelectorAll('.carousel');
+console.log(elem)
+var instance = M.Carousel.init(elem);
 
-li.innerHTML = pokeAll
-    // + multiplepokemon.all + '<br>'
+  var instance = M.FloatingActionButton.getInstance(elem);
 
-ul.appendChild(li)
-document.body.appendChild(ul)
-
-var elem = document.querySelector('.carousel');
-var instance = M.Carousel.init(elem, options);
 
 // console.log(multiplepokemon.all)
 // console.log(cataclysm.all)
