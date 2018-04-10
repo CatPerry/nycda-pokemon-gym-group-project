@@ -33,6 +33,7 @@
 
     // let counter = 0;
 
+
 function catPoke(callback) {    
 
 let poke1 = "https://pokeapi.co/api/v2/pokemon/799/"
@@ -78,21 +79,20 @@ let poke3 = "https://pokeapi.co/api/v2/pokemon/257/"
                     return abilitiesList
                 }
 
-         
                 cataclysm.add(pokemon)
+                // console.log(cataclysm);
                 // }).catch((error) => {
                 //     console.log(error)
-                })
-                
+                })     
                 // catPoke(callback)
                 callback(cataclysm)
       
     })
-}
-//   }).catch ((error) => {
-//     console.log(error)
-// })
 
+.catch ((error) => {
+    console.log(error)
+})
+}
 
 
                 // catPokeArr.push(guzzlord)
