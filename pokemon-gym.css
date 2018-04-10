@@ -5,21 +5,54 @@ and carousel items to a manageable height and width.
 https://stackoverflow.com/questions/37762139/how-to-increase-the-size-of-carousel-in-materialize-css */
 
 
+/* HTML below utilizes code from CSS Tricks to get the bacground image to cover the entire webpage and
+https://css-tricks.com/perfect-full-page-background-image/
+*/
+
+
+html {
+  background: url("https://images8.alphacoders.com/446/446274.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*
 body {
   background-color: blue;
-}
+} */
 
 h1 {
   text-align: center;
 }
 
-.PokeTitle {
+div.PokeTitle {
   text-align: center;
+  display: center;
 }
 
 .carousel .carousel-item {
   width: 300px !important;
   height: 300px !important;
+}
+
+div.carousel {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  background-color: rgb(237, 234, 231);
+  opacity: 0.8;
+}
+
+div.row {
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.card .card-image {
+  width: 300px;
+  height: 300px;
 }
 
 img {

@@ -29,7 +29,7 @@ var elem = document.querySelectorAll('.carousel');
 console.log(elem)
 var instance = M.Carousel.init(elem);
 
-  var instance = M.FloatingActionButton.getInstance(elem);
+
 
 
 // console.log(multiplepokemon.all)
