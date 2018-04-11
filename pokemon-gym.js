@@ -26,11 +26,11 @@ function createCard(whereToAppend, pokemon) {
     let defense = document.createElement("li")
     let abilities = document.createElement("li")
 
-    name.innerHTML = "Name:" + pokemon.name
-    attack.innerHTML = "Attack:" + pokemon.attackstat
-    hp.innerHTML = "HP:" + pokemon.hpstat
-    defense.innerHTML = "Defense:" + pokemon.defense
-    abilities.innerHTML = "Abilities" + pokemon.abilitiesname
+    name.innerHTML = "Name: " + pokemon.name
+    attack.innerHTML = "Attack: " + pokemon.attackstat
+    hp.innerHTML = "HP: " + pokemon.hpstat
+    defense.innerHTML = "Defense: " + pokemon.defense
+    abilities.innerHTML = "Abilities: " + pokemon.abilitiesname
 
     listItem.appendChild(name)
     listItem.appendChild(attack)
@@ -66,11 +66,11 @@ function createCard(whereToAppend, pokemonC) {
     let defense = document.createElement("li")
     let abilities = document.createElement("li")
 
-    name.innerHTML = "Name:" + pokemonC.name
-    attack.innerHTML = "Attack:" + pokemonC.attackstat
-    hp.innerHTML = "HP:" + pokemonC.hpstat
-    defense.innerHTML = "Defense:" + pokemonC.defense
-    abilities.innerHTML = "Abilities" + pokemonC.abilitiesname
+    name.innerHTML = "Name: " + pokemonC.name
+    attack.innerHTML = "Attack: " + pokemonC.attackstat
+    hp.innerHTML = "HP: " + pokemonC.hpstat
+    defense.innerHTML = "Defense: " + pokemonC.defense
+    abilities.innerHTML = "Abilities: " + pokemonC.abilitiesname
 
     listItem.appendChild(name)
     listItem.appendChild(attack)
@@ -79,8 +79,6 @@ function createCard(whereToAppend, pokemonC) {
     listItem.appendChild(abilities)
     whereToAppend.appendChild(listItem)
 }
-
-
 
 
 // Code below utilized from materialize for both the carousel and the the Floating
